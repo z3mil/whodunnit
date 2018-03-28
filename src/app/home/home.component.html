@@ -1,0 +1,28 @@
+﻿<div class="col-md-6 col-md-offset-3">
+    <h1>Hi {{currentUser.firstName}}!</h1>
+    <p>You're logged in to the Cyber Kids website.</p>
+    <div *ngIf="!isAdmin">
+        <div class="alert alert-danger">
+        HAHA! you thought I only hacked your users? think again! I am the admin of this website now
+        </div>
+        <div>
+            <img src="../assets/images/unicorn-stego-use-the-source.png" class="img-thumbnail" width="304" height="236">
+        </div>
+    </div>
+    <div *ngIf="isAdmin">
+        <img src="../assets/images/hack_squad_3.png" class="img-thumbnail" width="304" height="236">
+        <br>
+    </div>
+
+    <div *ngIf=false>
+        <h3>Administrator actions: registered users:</h3>
+        <ul>
+            <li *ngFor="let user of users">
+                {{user.username}} ({{user.firstName}} {{user.lastName}}) - <a (click)="deleteUser(user.id)">Delete</a>
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <p><button [routerLink]="['/login']" class="btn btn-primary">Logout</button></p>
+</div>
