@@ -4,5 +4,23 @@
 
 CTF style "Who Dunn It" game for children
 
+To build:
+1. Clone repo
+
+```
+git clone https://github.com/cyberkidsday/whodunnit.git
+```
+2. install npm dependencies where package.json is
+```
+npn install
+```
+3. run the app
+```
+npm start
+```
+
+
 Forked from:
-//github.com/cornflourblue/angular2-registration-login-example-webpack
+```
+https://github.com/cornflourblue/angular2-registration-login-example-webpack
+```
