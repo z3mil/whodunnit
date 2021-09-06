@@ -6,7 +6,7 @@
 
 ## Description
 
-CTF style "Who Dunn It" game for children
+CTF style "Who Dunn It" game for children (Frontend only)
 
 ## Building and running
 
